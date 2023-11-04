@@ -8,4 +8,4 @@ services:
         environment:
         - "TZ=Europe/Berlin"                     # your timezone
         - "URL=https://kuma.url/api/push/TjBGNpbF3E?status=up&msg=OK&ping=" # your Domain Update URL (invalid example)
-#        - "UI=1m"                               # intervall to update DDNS
+#        - "UI=1m"                               # intervall to update the uptime status
