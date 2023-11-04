@@ -5,7 +5,7 @@ if [ -z "$TZ" ] || ! echo "$TZ" | grep -q "^[A-Za-z/]\+$"; then
     sleep inf
 fi
 
-if [ -z "$URL" ] || ! echo "$URK" | grep -q "(http|https)://[a-zA-Z0-9./?=_%:-]*"; then
+if [ -z "$URL" ]; then
     echo "URL is unset or invalid"
     sleep inf
 fi
