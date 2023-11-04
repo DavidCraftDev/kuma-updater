@@ -4,7 +4,7 @@ COPY healthcheck.sh /usr/local/bin/healthcheck.sh
 RUN apk add --no-cache ca-certificates tzdata tini curl jq && \
     chmod -R 777 /tmp
 
-ENV UI=1m
+ENV UI=30s
 
 USER nobody
 ENTRYPOINT ["tini", "--", "update.sh"]
