@@ -2,10 +2,10 @@ version: "3"
 services:
     kuma-updater:
         container_name: kuma-updater
-        image: zoeyvid/kuma-updater
+        image: ghcr.io/davidcraftdev/kuma-updater:develop
         restart: always
         network_mode: host                       
         environment:
         - "TZ=Europe/Berlin"                     # your timezone
         - "URL=https://kuma.url/api/push/TjBGNpbF3E?status=up&msg=OK&ping=" # your Domain Update URL (invalid example)
-#        - "UI=5m"                               # intervall to update DDNS
+#        - "UI=1m"                               # intervall to update DDNS
