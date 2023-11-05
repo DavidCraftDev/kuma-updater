@@ -4,7 +4,7 @@ if ! [ -f /tmp/kuma.json ]; then
   exit 1
 fi
 
-if [ -f /tmp/kuma.json ] && [ "$(jq -r .status </tmp/kuma.json)" != "{"ok":true}" ]; then 
+if [ -f /tmp/kuma.json ] && [ "$(jq -r .ok </tmp/kuma.json)" != "true" ]; then 
   exit 1
 fi
 
