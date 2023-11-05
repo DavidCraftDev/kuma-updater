@@ -16,7 +16,7 @@ if ! echo "$UI" | grep -q "^[0-9]\+[smhd]\?$"; then
 fi
 
 while true; do
-    curl -sL "$URL" | tee /tmp/kuma.json
+    curl -sSL "$URL" | tee /tmp/kuma.json
 
     sleep "$UI"
 done
